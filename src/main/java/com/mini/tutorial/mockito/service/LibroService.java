@@ -22,6 +22,5 @@ public class LibroService {
 
     public void eliminar(Long id) {
         libroRepository.deleteById(id);
-        libroRepository.deleteAllInBatch();
     }
 }

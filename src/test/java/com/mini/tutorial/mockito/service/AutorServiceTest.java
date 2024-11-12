@@ -59,6 +59,7 @@ public class AutorServiceTest {
 
         // Llamamos al método obtenerTodos del servicio y verificamos que la lista esté vacía
         List<Autor> autorList = autorService.obtenerTodos();
+
         assertTrue(autorList.isEmpty());
 
         // Verificamos que el método findAll del repositorio fue llamado una vez
@@ -84,6 +85,7 @@ public class AutorServiceTest {
 
         // Verificamos que la excepción se lanza al llamar el método para eliminar
         RuntimeException exception = assertThrows(RuntimeException.class, () -> autorService.eliminar(1L));
+
         assertEquals("ID inválido para eliminación", exception.getMessage());
 
         // Verificamos que el método deleteById fue llamado solo una vez con el ID recibido
