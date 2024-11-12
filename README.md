@@ -9,6 +9,7 @@ Este proyecto tiene como objetivo mostrar la implementación de **pruebas unitar
 - **Spring Data JPA** - para el manejo de la persistencia con una base de datos MySQL
 - **Mockito** - para simular (mockear) dependencias y realizar pruebas unitarias
 - **JUnit 5** - para la ejecución de pruebas
+- **Maven ** - para la ejecución de pruebas
 
 ## Estructura del Proyecto
 
@@ -49,6 +50,12 @@ Las pruebas incluyen:
 Para ejecutar las pruebas se recomienda utilizar la herramienta que provee el IDE (Tal como se muestra en el video de la práctica)
 
 👉🏽 [Video en el canal de YouTube]()
+
+O bien si quieres ejecutarlo desde la línea de comandos puedes hacerlo de la siguiente manera (Asegurate de tener las versiones indicadas para que puedas ejecutar los _tests_ sin problemas), este proyecto no cuenta con un wrapper por lo que se requiere que tengas instalado maven en tu equipo.
+
+```shell
+mvn test
+```
 
 ## Contribuciones
 
